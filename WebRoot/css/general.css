@@ -1,0 +1,40 @@
+/* CSS Document */
+.clear{
+		clear:both;
+		 border-top:1px solid #ddd;
+		 
+	}
+	.info{
+		text-align:right;	
+		width:90px;
+		margin:10px 5px;
+		float:left;
+	
+	}
+	.option{
+		float:left;
+		margin:10px 5px;
+		
+	}
+
+
+
+
+
+.content span{
+	margin: 0px 3px 4px 0px;
+    padding: 1px 4px;
+    display: inline-block;
+    cursor: default;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    vertical-align: middle;
+	background-color: #EBF7FD;
+	border-color: #CAE5EF;
+}
+.content{
+	border:2px #66FFFF solid;
+	font-family:'΢���ź�';
+	margin-top:10px;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 指定全局国际化资源文件 -->
+    <constant name="struts.custom.i18n.resources" value="mess"></constant> 
+	<!-- 指定国际化编码所用的字符集 -->
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<!-- 所有的Action定义都在package下 -->
+    <constant name="struts.devMode" value="true"></constant>
+    
+    
+    
+    <package name="admin" extends="struts-default">
+    	<action name="addContestMessage" class="com.xzit.action.fzd_ContestMessageAction" method="addContestMessage">
+    		<result name="success" >/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    	<action name="findAllCM" class="com.xzit.action.fzd_ContestMessageAction" method="findAllCM">
+    		<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    	<action name="findCMByConId" class="com.xzit.action.fzd_ContestMessageAction" method="findCMByConId">
+    			<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    	<action name="removeCM" class="com.xzit.action.fzd_ContestMessageAction" method="removeCM">
+    			<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    		<action name="updateCM" class="com.xzit.action.fzd_ContestMessageAction" method="updateCM">
+    			<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    	
+  		<action name="queryFile" class="com.xzit.action.fzd_ContestMessageAction" method="findCMFileByConId">
+    			<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/Admin/Admin.jsp</result>
+    	</action>
+    	<action name="findAllCMPager" class="com.xzit.action.fzd_ContestMessageAction" method="findByPager">
+    		<result name="cmresult">/Admin/findAll.jsp</result>
+    	</action>
+    	  	<action name="findStartCM" class="com.xzit.action.fzd_ContestMessageAction" method="findStartCM">
+    		<result name="cmresult">/Admin/findEnrollAll.jsp</result>
+    	</action>
+    	<action name="findSubmitCM" class="com.xzit.action.fzd_ContestMessageAction" method="findSubmitCM">
+    		<result name="cmresult">/Admin/findSubmitAll.jsp</result>
+    	</action>
+    		<action name="findEndCM" class="com.xzit.action.fzd_ContestMessageAction" method="findEndCM">
+    		<result name="cmresult">/Admin/findEndAll.jsp</result>
+    	</action>
+    	<action name="loginf" class="com.xzit.action.fzd_AdminAction" method="login">
+    			<result  type="redirect" >/Admin/MyJsp.jsp</result>
+    		<result name="error" >/Admin/login.jsp</result>
+    	</action>
+    	    <action name="addMarkDetails" class="com.xzit.action.fzd_MarkDetailsAction" method="addMarkDetails">
+    			<result name="SUCCESS">/Admin/MyJsp.jsp</result>
+    		<result name="failed">/Admin/Admin.jsp</result>
+    	</action>
+    	
+    	  	<action name="createHeadTeacher" class="com.xzit.action.fzd_RaterAction" method="addHeadman">
+    			<result name="SUCCESS">/Admin/MyJsp.jsp</result>
+    		<result name="failed">/Admin/Admin.jsp</result>
+    	</action>
+    	<action name="createOtherTeacher" class="com.xzit.action.fzd_RaterAction" method="otherTeacher">
+    			<result name="SUCCESS">/Admin/MyJsp.jsp</result>
+    		<result name="failed">/Admin/Admin.jsp</result>
+    	</action>
+    	
+    	 	<action name="addMarkList" class="com.xzit.action.fzd_MarkDetailsAction" method="addMarkList">
+    	 		<result name="success">/Admin/Admin.jsp</result>
+    		<result name="error">/fzd_error.jsp</result>
+    	</action>
+    </package>   
+     
+</struts>
+
+
+
+
+
+
