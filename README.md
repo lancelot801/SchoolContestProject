@@ -1,1 +1,1 @@
-#SchoolContestProject
+#校园学科竞赛管理系统，大三下学期的J2EE课程设计项目，该项目采用的是MySQL数据库，前台框架使用的BootStrap3.0，使用的Struts2MVC框架。
