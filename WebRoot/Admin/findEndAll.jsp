@@ -54,8 +54,8 @@
 			//链接尾部
 			hrefLatter : '.action',
 			getLink : function(n) {
-				//return this.hrefFormer + this.hrefLatter + "?pno=" + n;
-				return this.hrefLatter -this.hrefFormer  + "?pno=" + n;
+				return this.hrefFormer + this.hrefLatter + "?pno=" + n;
+				//return this.hrefLatter -this.hrefFormer  + "?pno=" + n;
 			}
 		});
 	});

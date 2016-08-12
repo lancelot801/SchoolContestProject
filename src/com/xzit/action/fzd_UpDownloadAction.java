@@ -115,14 +115,14 @@ public class fzd_UpDownloadAction extends ActionSupport {
     // 文件下载
     public InputStream getDownloadFile() throws FileNotFoundException,
             UnsupportedEncodingException {
-        System.out.println(getFileName());
+       // System.out.println(getFileName());
 
         // 如果下载文件名为中文，进行字符编码转换
         ServletActionContext.getResponse().setHeader("Content-Disposition","attachment;fileName="
                         + java.net.URLEncoder.encode(fileName, "UTF-8"));
         InputStream inputStream = new FileInputStream("D:/"  //使用绝对路径 ，从该路径下载“测试.txt"文件
                 + this.getFileName());
-        System.out.println(inputStream);
+       // System.out.println(inputStream);
         return inputStream;
     }
 

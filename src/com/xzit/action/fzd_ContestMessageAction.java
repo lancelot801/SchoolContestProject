@@ -72,7 +72,7 @@ public class fzd_ContestMessageAction extends ActionSupport implements
 			HttpServletResponse response = ServletActionContext.getResponse();
 			response.setContentType("text/html;charset=utf-8");
 			PrintWriter out = response.getWriter();
-			// System.out.println(contestmessage.getConName());
+			//System.out.println(contestmessage.getConName());
 			if (cmdao.addCM(this.contestmessage) == 1) {
 				out.println("<script>alert('添加竞赛信息成功！');</script>");
 				out.flush();

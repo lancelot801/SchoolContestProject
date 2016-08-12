@@ -36,6 +36,7 @@ public class fzd_ContestMessageDaoImpl implements fzd_ContestMessageDao {
 		{
 			return 0;
 		}
+		//System.out.println(cm.getConName());
 		int flag = qr.update(conn, sql,cm.getConName(),cm.getProject(),cm.getEnrollStart().toString(),
 				cm.getEnrollEnd().toString(),cm.getGroupNum(),cm.getGrade(),cm.getSubmitStart().toString(),cm.getSubmitEnd().toString(),cm.getJurorLeader(),
 				cm.getPOrT(),cm.getExplains(),publishTime,cm.getCoOrganizer(),
@@ -157,11 +158,5 @@ public class fzd_ContestMessageDaoImpl implements fzd_ContestMessageDao {
 		fzd_PageBean pageBean  = fzd_Commons.getMyPageBean(sql, pageSize, page);
 		return pageBean;
 	}
-
-
-
-
-	
-	
 
 }
