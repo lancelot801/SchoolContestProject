@@ -2,7 +2,7 @@
 ###大三下学期的J2EE课程设计项目，该项目采用的是MySQL数据库，前台框架使用的BootStrap3.0，使用的Struts2MVC框架。
 ###今天把项目重新跑了一遍，发现添加竞赛信息时，输入中文乱码。经过排查后，发现从前端传到数据库是正常的，本来以为是数据库编码的问题，通过直接在Navicat中添加中文，没有出现乱码。Java后台编码正常，数据库编码正常，所以问题应该出在两者的连接上，通过网上查阅资料后，最终在db.properties文件下将url添加?useUnicode\=true&characterEncoding\=utf8修改为url=jdbc\:mysql\://localhost\:3306/contest?useUnicode\=true&characterEncoding\=utf8，中文乱码问题解决
  
- |#|功能|效果图|
+#|功能|效果图|
 |---|---|----
 |1|`登录页面 login.jsp`|![image](https://github.com/lancelot801/SchoolContestProject/blob/master/images_folder/login.jpg "登录页面")
 |2|`![][foryou]`|![][foryou]
